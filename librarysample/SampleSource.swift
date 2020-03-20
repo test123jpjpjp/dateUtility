@@ -6,8 +6,13 @@
 //  Copyright © 2020 Ebina, Daisuke. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class SampleSource: NSObject {
+public func datePlus(helloString: String) -> String {//publicが必要
+    let format = DateFormatter()
+    format.dateFormat = "yyyy-MM-dd"
 
+    let date = Date()
+
+    return helloString + " on " + format.string(from: date) + "."
 }

@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2F3EC66524236BF40096403D /* librarysample.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F3EC66324236BF40096403D /* librarysample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F3EC66C24236C1C0096403D /* SampleSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3EC66B24236C1C0096403D /* SampleSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2F3EC66024236BF40096403D /* librarysample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = librarysample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F3EC66324236BF40096403D /* librarysample.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = librarysample.h; sourceTree = "<group>"; };
 		2F3EC66424236BF40096403D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F3EC66B24236C1C0096403D /* SampleSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				2F3EC66324236BF40096403D /* librarysample.h */,
 				2F3EC66424236BF40096403D /* Info.plist */,
+				2F3EC66B24236C1C0096403D /* SampleSource.swift */,
 			);
 			path = librarysample;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					2F3EC65F24236BF40096403D = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F3EC66C24236C1C0096403D /* SampleSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		2F3EC66924236BF40096403D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = M8SG59BK4S;
@@ -268,6 +274,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = librarysample/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -276,6 +283,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.co.rakuten.nba.librarysample;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +292,7 @@
 		2F3EC66A24236BF40096403D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = M8SG59BK4S;
@@ -292,6 +301,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = librarysample/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
