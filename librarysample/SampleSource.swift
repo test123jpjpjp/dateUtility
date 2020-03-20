@@ -8,11 +8,15 @@
 
 import Foundation
 
-public func datePlus(helloString: String) -> String {//publicが必要
-    let format = DateFormatter()
-    format.dateFormat = "yyyy-MM-dd"
+public extension Date {
+    func firstOfMonth() -> Date {
+        let startDate = Calendar.current.startOfDay(for: self)
+        return Calendar.current.date(
+            from: Calendar.current.dateComponents([.year, .month], from: startDate)) ?? Date()
+    }
+    
+    func lastOfMonth() -> Date {
+        return Calendar(identifier: .gregorian).date(byAdding: DateComponents(month: 1, day: -1), to: self.firstOfMonth()) ?? Date()
 
-    let date = Date()
-
-    return helloString + " on " + format.string(from: date) + "."
+    }
 }

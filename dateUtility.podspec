@@ -1,11 +1,11 @@
 
 Pod::Spec.new do |s|
   s.name         = "dateUtility"
-  s.version      = "0.1.0"
-  s.summary      = "短い説明"
+  s.version      = "0.1.3"
+  s.summary      = "よく使う日付関係の関数"
 
   s.description  = <<-DESC
-                   It is a swift module that implements basic features.
+                   よく使う日付関数
                    DESC
 
   s.homepage     = "https://github.com/test123jpjpjp/dateUtilit"
