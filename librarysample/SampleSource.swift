@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Kingfisher
 
 public extension Date {
     var firstOfMonth: Date {
