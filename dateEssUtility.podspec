@@ -1,14 +1,14 @@
 
 Pod::Spec.new do |s|
-  s.name         = "dateUtility"
-  s.version      = "0.1.6"
+  s.name         = "dateEssUtility"
+  s.version      = "0.1.8"
   s.summary      = "よく使う日付関係の関数"
 
   s.description  = <<-DESC
                    よく使う日付関数
                    DESC
 
-  s.homepage     = "https://github.com/test123jpjpjp/dateUtilit"
+  s.homepage     = "https://github.com/test123jpjpjp/dateUtility"
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
