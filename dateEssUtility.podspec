@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "dateEssUtility"
-  s.version      = "0.3.0"
+  s.version      = "0.3.1"
   s.summary      = "よく使う日付関係の関数"
 
   s.description  = <<-DESC
